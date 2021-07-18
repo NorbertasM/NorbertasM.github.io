@@ -1,0 +1,11 @@
+.skillsContainer {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+
+  > .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
