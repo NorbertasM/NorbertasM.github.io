@@ -1,5 +1,5 @@
-import HeaderName from '../../ui components/header-name/header-name';
-import Toggle     from '../../ui components/toggle/toggle';
+import HeaderName from '../../ui-components/header-name/header-name';
+import Toggle     from '../../ui-components/toggle/toggle';
 
 import styles     from './header.module.scss'
 

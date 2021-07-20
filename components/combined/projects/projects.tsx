@@ -1,6 +1,6 @@
 
 import { projects } from '../../../data/projects'
-import ProjectSmall from '../../ui components/project-small/project-small'
+import ProjectSmall from '../../ui-components/project-small/project-small'
 
 import styles       from './projects.module.scss'
 
