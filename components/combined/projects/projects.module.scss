@@ -1,0 +1,9 @@
+@import './index.scss';
+
+.container {
+  // background-color: lightblue;
+  border-top: 2px solid $borderGray;
+  padding-top: 15px;
+  width: 90%;
+  margin-left: 5%;
+}

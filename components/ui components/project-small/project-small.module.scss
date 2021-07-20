@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  border: 2px outset rgba(173, 216, 230, 0.384);
+  padding: 5px;
+  background-color: rgba(208, 226, 231, 0.596);
+
+  &:hover {
+    background-color: rgba(178, 208, 216, 0.596);
+    cursor: pointer;
+  }
+
+  > .description {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 60%;
+
+    > .completed {
+      font-weight: bold;
+      color: green;
+    }
+
+    > .group {
+      width: 90%;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    > .ongoing {
+      font-weight: bold;
+      color: firebrick;
+    }
+  }
+
+  > .description p {
+    margin: 0;
+  }
+}
