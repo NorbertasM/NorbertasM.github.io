@@ -1,7 +1,7 @@
 import Head   from 'next/head'
 
 import Footer from '../components/combined/footer/footer'
-import Header from '../components/combined/header/header'
+// import Header from '../components/combined/header/header'
 // import Main   from '../components/combined/main/main'
 import styles from '../styles/Home.module.scss'
 
@@ -15,7 +15,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
       {/* <Main /> */}
       <Footer />
     </div>
