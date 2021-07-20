@@ -2,7 +2,7 @@ import {
   frontEndSkills,
   backEndSkills,
 }                      from '../../../data/skills'
-import SkillsContainer from '../../ui components/skill-group/skill-group'
+import SkillsContainer from '../../ui-components/skill-group/skill-group'
 
 import styles          from './Skills.module.scss'
 

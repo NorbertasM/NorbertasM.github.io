@@ -1,6 +1,6 @@
-import MainImage  from '../../ui components/main-image/main-image'
-import Profession from '../../ui components/profession/profession'
-import Triangle   from '../../ui components/triangle/triangle'
+import MainImage  from '../../ui-components/main-image/main-image'
+import Profession from '../../ui-components/profession/profession'
+import Triangle   from '../../ui-components/triangle/triangle'
 
 import styles     from './main-image-container.module.scss'
 
