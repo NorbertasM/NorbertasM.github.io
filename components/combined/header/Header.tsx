@@ -1,17 +1,17 @@
 // import HeaderName from '../../ui components/header-name/header-name';
 // import Toggle     from '../../ui components/toggle/toggle';
 
-import styles     from './header.module.scss'
+// import styles     from './header.module.scss'
 
 
 const Header = () => {
-  return (
-    <div className={styles.titleContainer}>
-      {/* <HeaderName /> */}
-      {/* <div className={styles.toggle}>
-        <Toggle />
-      </div> */}
-    </div>
+  return (<p>fak</p>
+    // <div className={styles.titleContainer}>
+      //  <HeaderName />
+      //  <div className={styles.toggle}>
+        // <Toggle />
+      // </div>
+    // </div>
   )
 }
 
