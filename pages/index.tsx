@@ -1,8 +1,8 @@
 import Head   from 'next/head'
 
 import Footer from '../components/combined/footer/footer'
-import Main   from '../components/combined/main/main'
 import Header from '../components/combined/header/header'
+import Main   from '../components/combined/main/main'
 import styles from '../styles/Home.module.scss'
 
 
