@@ -2,7 +2,7 @@ import Head   from 'next/head'
 
 import Footer from '../components/combined/footer/footer'
 import Header from '../components/combined/header/header'
-import Main   from '../components/combined/main/main'
+// import Main   from '../components/combined/main/main'
 import styles from '../styles/Home.module.scss'
 
 
@@ -16,7 +16,7 @@ const Home = () => {
       </Head>
 
       <Header />
-      <Main />
+      {/* <Main /> */}
       <Footer />
     </div>
   )
