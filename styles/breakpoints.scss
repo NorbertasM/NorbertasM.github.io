@@ -1,0 +1,22 @@
+$mobileS-width: 320px;
+$mobileM-width: 375px;
+$mobileL-width: 425px;
+
+
+@mixin mobile-s {
+  @media (max-width: #{$mobileS-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-m  {
+  @media (min-width: #{$mobileS-width}) and (max-width: #{$mobileM-width -1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-l  {
+  @media (min-width: #{$mobileM-width}) and (max-width: #{$mobileL-width -1px}) {
+    @content;
+  }
+}

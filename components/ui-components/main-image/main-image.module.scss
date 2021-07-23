@@ -1,7 +1,9 @@
 .profileImage {
-  margin-top: 10%;
-  width: 60%;
+  width: 180px;
   z-index: 1;
+  border-radius: 50%;
+  box-shadow: -7px -7px #238bbb6c;
+  // box-shadow: -20px -20px 2px 10px rgba(65, 65, 65, 0.2);
 }
 
 .profileImage img {

@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: row;
   padding-bottom: 0;
-  border: 2px outset rgba(173, 216, 230, 0.384);
+  border: 2px outset rgba(224, 224, 224, 0.384);
   padding: 5px;
-  background-color: rgba(208, 226, 231, 0.596);
+  // background-color: rgba(208, 226, 231, 0.596);
+  margin-bottom: 10px;
 
   &:hover {
     background-color: rgba(178, 208, 216, 0.596);
@@ -28,11 +29,22 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      text-overflow: ellipsis;
+      font-size: 14px;
+    }
+
+    > .group p {
+      text-overflow: ellipsis;
     }
 
     > .ongoing {
       font-weight: bold;
       color: firebrick;
+    }
+
+    > .title{
+      margin-top: 0;
+      margin-bottom: 5px;
     }
   }
 

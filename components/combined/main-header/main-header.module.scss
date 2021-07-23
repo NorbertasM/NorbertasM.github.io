@@ -1,9 +1,17 @@
+@import './index.scss';
+
 .titleContainer {
   display: flex;
+  min-height: 50px;
+  padding-bottom: 5px;
+
+  > .hamburger {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
 
   > .toggle {
-    position: absolute;
-    top: 2%;
-    right: 5%;
+    margin-left: 200px;
+    margin-top: 10px;
   }
 }
