@@ -7,6 +7,7 @@ import styles       from './projects.module.scss'
 const Projects = () => {
   return (
     <div className={styles.container}>
+      <h2>PROJECTS:</h2>
       {projects.map(project => {
         const { completed, icon, id, platform, technology, title, type} = project
         return (

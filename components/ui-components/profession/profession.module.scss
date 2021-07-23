@@ -1,7 +1,9 @@
 .profession {
   display: flex;
-  flex-direction: column;
-  margin-top: 200px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  transform: rotate(.875turn);
 }
 
 .profession h2 {

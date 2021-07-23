@@ -1,6 +1,6 @@
 import Image  from 'next/image'
 
-import face   from '../../../public/images/foto41.jpg'
+import face   from '../../../public/images/foto0.jpg'
 
 import styles from './main-image.module.scss'
 
