@@ -1,6 +1,7 @@
 import GetTheCheese from '../public/images/getTheCheese.png'
-import pliusTv from '../public/images/pliusTv.png'
-import homeIt from '../public/images/homeIt.png'
+import homeIt       from '../public/images/homeIt.png'
+import pliusTv      from '../public/images/pliusTv.png'
+import kopa         from '../public/images/kopa.jpg'
 
 
 export const projects = [
@@ -14,7 +15,7 @@ export const projects = [
     type:       'Mobile Game',
   },
   {
-    completed:  false,
+    completed:  true,
     icon:       pliusTv,
     id:         1,
     platform:   ['Samsung TV', 'LG webOS'],
@@ -29,6 +30,15 @@ export const projects = [
     platform:   ['Web'],
     technology: ['React js', 'Mongo DB', 'Express js'],
     title:      'HomeIt',
+    type:       'Web App',
+  },
+  {
+    completed:  false,
+    icon:       kopa,
+    id:         3,
+    platform:   ['Web'],
+    technology: ['React js', 'Mongo DB', 'Express js'],
+    title:      'Kopa',
     type:       'Web App',
   },
 ] 
