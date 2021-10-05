@@ -1,6 +1,6 @@
 import git           from '../public/images/icons/git.svg'
 import javascript    from '../public/images/icons/javascript.svg'
-import mongoDb       from '../public/images/icons/mongoDb.svg'
+import mongoDB       from '../public/images/icons/mongoDB.svg'
 import nodeJS        from '../public/images/icons/nodeJS.svg'
 import redux         from '../public/images/icons/redux.svg'
 import typescript    from '../public/images/icons/typescript.svg'
@@ -18,7 +18,7 @@ export const frontEndSkills: Array<SkillItem> = [
 export const backEndSkills: Array<SkillItem> = [
   { title: 'NODE JS', image: nodeJS},
   { title: 'EXPRESS JS', image: nodeJS},
-  { title: 'MONGO DB', image: mongoDb},
-  { title: 'MONGOOSE', image: mongoDb},
+  { title: 'MONGO DB', image: mongoDB},
+  { title: 'MONGOOSE', image: mongoDB},
   { title: 'GIT', image: git},
 ]
