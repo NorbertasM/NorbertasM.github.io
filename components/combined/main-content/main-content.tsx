@@ -1,19 +1,12 @@
+import Skills    from '../Skills/Skills'
 
-import MainImageContainer from '../main-image-container/main-image-container'
-import Message            from '../../ui-components/message/message'
-import Projects           from '../projects/projects'
-import Skills             from '../Skills/Skills'
-
-import styles             from './main-content.module.scss'
+import styles    from './main-content.module.scss'
 
 
-const Main  = () => {
+const Main = () => {
   return (
     <main className={styles.main}>
-      <MainImageContainer />
       <Skills />
-      <Projects />
-      <Message />
     </main>
   )
 }
