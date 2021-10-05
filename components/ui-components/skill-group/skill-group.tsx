@@ -1,8 +1,14 @@
+import Skill  from './Skill'
 import styles from './skill-group.module.scss'
 
 
 interface Props {
-  skills: Array<string>,
+  skills: Array<SkillItem>,
+}
+
+ export interface SkillItem {
+  image: SVGAElement
+  title: string
 }
 
 
@@ -11,7 +17,9 @@ const SkillsContainer = (props: Props) => {
 
   return (
     <div className={styles.column}>
-      {skills.map(skill => <p key={skill}>{skill}</p>)}
+      {skills.map(({ image, title }) =>
+        <Skill key={title} icon={image} title={title}/>
+      )}
     </div>
   )
 }
