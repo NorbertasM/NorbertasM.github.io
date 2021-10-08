@@ -7,6 +7,9 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <Skills />
+      <div className={styles.footer}>
+        <p className={styles.copyRight}>NORBERTAS MURAUSKAS©</p>
+      </div>
     </main>
   )
 }
