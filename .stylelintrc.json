@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "declaration-colon-space-after":   null,
+    "color-no-invalid-hex":            null,
+    "max-nesting-depth":               4,
+    "no-eol-whitespace":               true,
+    "selector-max-compound-selectors": 4,
+    "selector-class-pattern":          "^[a-z][a-zA-Z0-9]+$"
+  }
+}

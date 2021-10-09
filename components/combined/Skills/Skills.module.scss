@@ -1,18 +1,17 @@
-@import './index.scss';
+@import './index';
 
 .skillsContainer {
-  width: 90%;
-  text-align: center;
   margin-left: 5%;
+  text-align: center;
+  width: 90%;
 
   > .skills {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
     > div:nth-child(1) {
-      border-right: 2px solid $borderGray;
+      border-right: 2px solid $border-gray;
     }
   }
-
 }

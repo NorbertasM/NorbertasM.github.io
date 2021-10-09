@@ -1,13 +1,13 @@
 .footer {
-  min-width:        100vw;
-  min-height:       40px;
   background-color: rgb(0, 0, 0);
-  position:         absolute;
   bottom:           0;
+  min-height:       40px;
+  min-width:        100vw;
+  position:         absolute;
   text-align:       center;
 }
 
 .copyRight {
+  color:    rgb(255, 255, 255);
   font-size: 12px;
-  color:    white;
 }

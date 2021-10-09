@@ -1,9 +1,9 @@
-@import './index.scss';
+@import './index';
 
 .container {
-  max-height:       100vh;
-  overflow:         hidden;
+  background-color: $background-light;
   display:          flex;
   flex-direction:   column;
-  background-color: $backgroundLight;
+  max-height:       100vh;
+  overflow:         hidden;
 }
