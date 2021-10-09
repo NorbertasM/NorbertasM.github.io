@@ -3,7 +3,7 @@
   display:  inline-block;
   height:   34px;
   position: relative;
-  width:    260px;
+  width:    80%;
 }
 
 /* Hide default HTML checkbox */
@@ -33,7 +33,7 @@
   left:               0;
   position:           absolute;
   transition:         .4s;
-  width:              130px;
+  width:              50%;
   -webkit-transition: .4s;
 }
 
@@ -46,9 +46,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(130px);
-  -ms-transform:     translateX(130px);
-  transform:         translateX(130px);
+  -webkit-transform: translateX(100%);
+  -ms-transform:     translateX(100%);
+  transform:         translateX(100%);
 }
 
 /* Rounded sliders */
@@ -63,31 +63,15 @@ input:checked + .slider:before {
 .skills {
   color:      black;
   position:   absolute;
-  left:       40px;
+  left:       15%;
   z-index:    20;
   margin-top: 4px;
-
-  @media screen and (min-width: 375px) {
-    left: 65px;
-  }
-
-  @media screen and (min-width: 425px) {
-    left: 90px;
-  }
 }
 
 .about {
   color:      black;
   position:   absolute;
-  right:      40px;
+  right:      15%;
   z-index:    20;
   margin-top: 4px;
-  
-  @media screen and (min-width: 375px) {
-    right: 65px;
-  }
-  
-  @media screen and (min-width: 425px) {
-    right: 90px;
-  }
 }
