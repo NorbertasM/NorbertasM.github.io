@@ -1,6 +1,6 @@
-import Skills    from '../Skills/Skills'
+import Skills from '../Skills/Skills'
 
-import styles    from './main-content.module.scss'
+import styles from './main-content.module.scss'
 
 
 const Main = () => {

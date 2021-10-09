@@ -11,15 +11,15 @@ const Toggle = () => {
   }
 
   return (
-    <div> 
-    <h3 onClick={click} className={styles.about}>ABOUT ME</h3>
-    <h3 onClick={click} className={styles.skills}>SKILLS</h3>
+    <div>
+      <h3 onClick={click} className={styles.about}>ABOUT ME</h3>
+      <h3 onClick={click} className={styles.skills}>SKILLS</h3>
       <label className={styles.switch}>
         <input type='checkbox' onChange={click} checked={checked} />
         <span className={`${styles.slider} ${styles.round}`}></span>
       </label>
     </div>
-  ) 
+  )
 }
 
 

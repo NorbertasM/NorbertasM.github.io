@@ -11,8 +11,8 @@ const Home = () => {
     <div className={styles.container}>
       <Head>
         <title>Norbertas Murauskas</title>
-        <meta name="description" content="Norbert Murauskas Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content='Norbert Murauskas Portfolio' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainHeader />
       <MainContent />
