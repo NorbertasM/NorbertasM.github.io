@@ -1,9 +1,10 @@
 import Head        from 'next/head'
 
 import MainContent from '../components/combined/main-content/main-content'
-import styles      from '../styles/Home.module.scss'
+import MainFooter  from '../components/combined/main-footer/main-footer'
 import MainHeader  from '../components/combined/main-header/main-header'
 
+import styles      from '../styles/Home.module.scss'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </Head>
       <MainHeader />
       <MainContent />
+      <MainFooter />
     </div>
   )
 }
