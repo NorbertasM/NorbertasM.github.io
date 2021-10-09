@@ -1,9 +1,9 @@
-import Image    from 'next/image'
+import Image  from 'next/image'
 
-import styles   from './Skill.module.scss'
+import styles from './Skill.module.scss'
 
 interface Props {
-    icon:  any
+    icon:  StaticImageData
     title: string
 }
 

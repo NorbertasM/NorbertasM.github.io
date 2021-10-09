@@ -1,6 +1,6 @@
-$mobileS-width: 320px;
-$mobileM-width: 375px;
-$mobileL-width: 425px;
+$mobiles-width: 320px;
+$mobilem-width: 375px;
+$mobilel-width: 425px;
 
 
 @mixin mobile-s {
@@ -9,13 +9,13 @@ $mobileL-width: 425px;
   }
 }
 
-@mixin mobile-m  {
+@mixin mobile-m {
   @media (min-width: #{$mobileS-width}) and (max-width: #{$mobileM-width -1px}) {
     @content;
   }
 }
 
-@mixin mobile-l  {
+@mixin mobile-l {
   @media (min-width: #{$mobileM-width}) and (max-width: #{$mobileL-width -1px}) {
     @content;
   }

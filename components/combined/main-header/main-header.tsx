@@ -1,6 +1,6 @@
-import Toggle     from '../../ui-components/toggle/toggle';
+import Toggle from '../../ui-components/toggle/toggle'
 
-import styles     from './main-header.module.scss'
+import styles from './main-header.module.scss'
 
 
 const MainHeader = () => {
@@ -16,7 +16,7 @@ const MainHeader = () => {
           WEB DEVELOPER
         </h2>
       </div>
-       <div className={styles.toggle}>
+      <div className={styles.toggle}>
         <Toggle />
       </div>
     </div>

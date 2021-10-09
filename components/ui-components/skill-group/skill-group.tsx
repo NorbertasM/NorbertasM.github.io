@@ -6,8 +6,8 @@ interface Props {
   skills: Array<SkillItem>,
 }
 
- export interface SkillItem {
-  image: SVGAElement
+export interface SkillItem {
+  image: StaticImageData
   title: string
 }
 

@@ -22,19 +22,19 @@
   position:           absolute;
   right:              0;
   top:                0;
-  transition:         .4s;
-  -webkit-transition: .4s;
+  transition:         0.4s;
+  -webkit-transition: 0.4s;
 }
 
-.slider:before {
+.slider::before {
   background-color:   rgb(255, 255, 255);
-  content:            "";
+  content:            '';
   height:             34px;
   left:               0;
   position:           absolute;
-  transition:         .4s;
+  transition:         0.4s;
   width:              50%;
-  -webkit-transition: .4s;
+  -webkit-transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -45,7 +45,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px rgb(109, 109, 109);
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   -webkit-transform: translateX(100%);
   -ms-transform:     translateX(100%);
   transform:         translateX(100%);
@@ -56,22 +56,22 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 34px;
 }
 
 .skills {
-  color:      black;
-  position:   absolute;
+  color:      rgb(0, 0, 0);
   left:       15%;
-  z-index:    20;
   margin-top: 4px;
+  position:   absolute;
+  z-index:    20;
 }
 
 .about {
-  color:      black;
+  color:      rgb(0, 0, 0);
+  margin-top: 4px;
   position:   absolute;
   right:      15%;
   z-index:    20;
-  margin-top: 4px;
 }
