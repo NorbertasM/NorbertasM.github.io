@@ -1,0 +1,30 @@
+@import './index';
+
+.headerContainer {
+  @include color-transition();
+  min-height:         250px;
+  padding-top:        20px;
+  text-align:         center;
+
+  > .nameContainer {
+    color: $text-light;
+  }
+
+  > .profession {
+    border-top: 1px solid $text-light;
+    color:      $text-light;
+    margin:     0 60px;
+  }
+
+  > .toggle {
+    margin-top: 50px;
+  }
+}
+
+.containerDark {
+  background-color: $main-color-dark;
+}
+
+.containerLight {
+  background-color: $main-color-light;
+}

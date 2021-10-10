@@ -2,10 +2,20 @@ import Toggle from '../../ui-components/toggle/toggle'
 
 import styles from './main-header.module.scss'
 
+interface Props {
+  showSkills:   boolean
+  toggleSkills: (T: boolean) => void
+}
 
-const MainHeader = () => {
+
+const MainHeader = ({ showSkills, toggleSkills }: Props) => {
   return (
-    <div className={styles.headerContainer}>
+    <div
+      className={`
+        ${styles.headerContainer}
+        ${showSkills ? styles.containerDark : styles.containerLight}
+      `}
+    >
       <div className={styles.nameContainer}>
         <h2>
           NORBERTAS MURAUSKAS
@@ -17,7 +27,7 @@ const MainHeader = () => {
         </h2>
       </div>
       <div className={styles.toggle}>
-        <Toggle />
+        <Toggle onToggle={toggleSkills} showSkills={showSkills}/>
       </div>
     </div>
   )

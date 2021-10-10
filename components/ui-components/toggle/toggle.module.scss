@@ -1,3 +1,5 @@
+@import './index';
+
 /* The switch - the box around the slider */
 .switch {
   display:  inline-block;
@@ -14,35 +16,33 @@
 }
 
 /* The slider */
+
+.lightSlider {
+  background-color:    rgb(57, 71, 99);
+}
+
+.darkSlider {
+  background-color:    rgb(61, 61, 61);
+}
+
 .slider {
-  background-color:    rgb(109, 109, 109);
+  @include slider-transition();
   bottom:              0;
   cursor:              pointer;
   left:               0;
   position:           absolute;
   right:              0;
   top:                0;
-  transition:         0.4s;
-  -webkit-transition: 0.4s;
 }
 
 .slider::before {
-  background-color:   rgb(255, 255, 255);
+  @include slider-transition();
+  background-color:   $text-light;
   content:            '';
   height:             34px;
   left:               0;
   position:           absolute;
-  transition:         0.4s;
   width:              50%;
-  -webkit-transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: rgb(109, 109, 109);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px rgb(109, 109, 109);
 }
 
 input:checked + .slider::before {
@@ -61,7 +61,7 @@ input:checked + .slider::before {
 }
 
 .skills {
-  color:      rgb(0, 0, 0);
+  color:      $main-color-dark;
   left:       15%;
   margin-top: 4px;
   position:   absolute;
@@ -69,7 +69,7 @@ input:checked + .slider::before {
 }
 
 .about {
-  color:      rgb(0, 0, 0);
+  color:      $main-color-dark;
   margin-top: 4px;
   position:   absolute;
   right:      15%;

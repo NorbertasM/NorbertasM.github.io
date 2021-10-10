@@ -1,0 +1,23 @@
+@import './index';
+
+.footer {
+  @include color-transition();
+  bottom:     0;
+  min-height: 40px;
+  min-width:  100vw;
+  position:   absolute;
+  text-align: center;
+}
+
+.copyRight {
+  color:    $text-light;
+  font-size: 12px;
+}
+
+.footerDark {
+  background-color: $main-color-dark;
+}
+
+.footerLight {
+  background-color: $main-color-light;
+}
