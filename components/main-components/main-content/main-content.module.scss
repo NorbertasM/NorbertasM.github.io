@@ -1,7 +1,11 @@
+@import './index';
+
 .main {
   display:        flex;
   flex:           1;
   flex-direction: column;
-  overflow:       auto;
+  min-height:     100%;
+  overflow-x:     hidden;
+  overflow-y:     auto;
   padding:        10px 0;
 }
