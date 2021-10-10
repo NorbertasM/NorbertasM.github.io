@@ -1,3 +1,8 @@
+import {
+  CSSTransition,
+  SwitchTransition,
+}             from 'react-transition-group'
+
 import About  from '../About/About'
 import Skills from '../Skills/Skills'
 
@@ -10,7 +15,20 @@ interface Props {
 const Main = ({ showSkills }: Props) => {
   return (
     <main className={styles.main}>
-      {showSkills ? <Skills /> : <About />}
+      <SwitchTransition>
+        <CSSTransition
+          classNames={{
+            enterActive: styles.fadeEnterActive,
+            enter:       styles.fadeEnter,
+            exit:        styles.fadeExit,
+            exitActive:  styles.fadeExitActive,
+          }}
+          timeout={300}
+          key={showSkills ? 'showSkills' : 'showAbout'}
+        >
+          {showSkills ? <Skills key='showSkills' /> : <About key='showAbout' />}
+        </CSSTransition>
+      </SwitchTransition>
     </main>
   )
 }
