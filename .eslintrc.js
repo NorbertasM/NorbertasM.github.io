@@ -34,7 +34,7 @@ module.exports = {
     semi:                          ['error', 'never'],
     indent:                        ['error', 2],
     'jsx-quotes':                  ['error', 'prefer-single'],
-    'max-len':                     ['error', { code: 80 }],
+    'max-len':                     ['error', { code: 100 }],
     'no-trailing-spaces':          ['error'],
     'react/display-name':          [0],
     'react-hooks/rules-of-hooks':  'error',

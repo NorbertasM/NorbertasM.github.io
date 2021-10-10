@@ -1,0 +1,45 @@
+
+.aboutContainer {
+  text-align: center;
+
+  .imageContainer {
+    left:     -80px;
+    position: relative;
+    top:      40px;
+
+    .image {
+      border-radius: 50%;
+    }
+  }
+
+  .introduction {
+    left:     50px;
+    position: relative;
+    top:      -45px;
+  }
+
+  .name {
+    left:     60px;
+    position: relative;
+    top:      -60px;
+  }
+
+  .profession {
+    left:     60px;
+    position: relative;
+    top:      -75px;
+  }
+
+  .student {
+    margin-left: 10%;
+    margin-top:  -80px;
+    max-width:   80%;
+    text-align:  center;
+  }
+
+  .work {
+    margin-left: 10%;
+    max-width:   80%;
+    text-align:  center;
+  }
+}

@@ -1,13 +1,14 @@
-import { useState } from 'react'
-
 import styles       from './toggle.module.scss'
 
+interface Props {
+  showSkills:   boolean
+  onToggle: (T: boolean) => void
+}
 
-const Toggle = () => {
-  const [checked, setChecked] = useState(false)
+const Toggle = ({ showSkills, onToggle }: Props) => {
 
   const click = () => {
-    setChecked(prev => !prev)
+    onToggle(!showSkills)
   }
 
   return (
@@ -15,8 +16,15 @@ const Toggle = () => {
       <h3 onClick={click} className={styles.about}>ABOUT ME</h3>
       <h3 onClick={click} className={styles.skills}>SKILLS</h3>
       <label className={styles.switch}>
-        <input type='checkbox' onChange={click} checked={checked} />
-        <span className={`${styles.slider} ${styles.round}`}></span>
+        <input
+          type='checkbox' onChange={click} checked={!showSkills} />
+        <span
+          className={`
+          ${styles.slider}
+          ${styles.round}
+          ${showSkills ? styles.darkSlider : styles.lightSlider}
+          `}
+        ></span>
       </label>
     </div>
   )

@@ -5,3 +5,15 @@
   top:          50%;
   transform:    translate(-50%, -50%);
 }
+
+@mixin color-transition {
+  -webkit-transition: background-color 0.8s linear;
+  -ms-transition:     background-color 0.8s linear;
+  transition:         background-color 0.8s linear;
+}
+
+@mixin slider-transition {
+  -webkit-transition: 0.6s ease-out;
+  -ms-transition:     0.6s ease-out;
+  transition:         0.6s ease-out;
+}
