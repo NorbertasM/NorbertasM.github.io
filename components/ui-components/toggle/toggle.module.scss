@@ -63,14 +63,14 @@ input:checked + .slider::before {
 .skills {
   color:      $main-color-dark;
   left:       15%;
-  margin-top: 4px;
+  margin-top: 8px;
   position:   absolute;
   z-index:    20;
 }
 
 .about {
   color:      $main-color-dark;
-  margin-top: 4px;
+  margin-top: 8px;
   position:   absolute;
   right:      15%;
   z-index:    20;
