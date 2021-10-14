@@ -10,23 +10,34 @@
   overflow-y:     auto;
 }
 
-.fadeEnter {
-  opacity: 0;
+.rightEnter {
+  transform: translateX(100%);
 }
 
-.fadeExit {
-  opacity: 1;
+.exit {
+  transform: translateX(0%);
 }
 
-.fadeEnterActive {
-  opacity: 1;
+.rightExitActive {
+  transform: translateX(100%);
 }
 
-.fadeExitActive {
-  opacity: 0;
+.leftEnter {
+  transform: translateX(-100%);
 }
 
-.fadeEnterActive,
-.fadeExitActive {
-  transition: opacity 1s;
+.leftExitActive {
+  transform: translateX(-100%);
+}
+
+.enterActive {
+  transform: translateX(0%);
+}
+
+.rightExitActive,
+.enterActive,
+.leftExitActive {
+  -webkit-transition:transform 0.3s ease-out;
+  -ms-transition:    transform 0.3s ease-out;
+  transition:        transform 0.3s ease-out;
 }
