@@ -18,10 +18,10 @@ const Main = ({ showSkills }: Props) => {
       <SwitchTransition>
         <CSSTransition
           classNames={{
-            enterActive: styles.fadeEnterActive,
-            enter:       styles.fadeEnter,
-            exit:        styles.fadeExit,
-            exitActive:  styles.fadeExitActive,
+            enterActive: styles.enterActive,
+            enter:       showSkills ? styles.rightEnter : styles.leftEnter,
+            exit:        styles.exit,
+            exitActive:  showSkills ? styles.rightExitActive: styles.leftExitActive,
           }}
           timeout={300}
           key={showSkills ? 'showSkills' : 'showAbout'}
